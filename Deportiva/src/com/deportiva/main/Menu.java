@@ -1,23 +1,15 @@
 package com.deportiva.main;
 
-import com.deportiva.calendario.IntroCalendario;
-import com.deportiva.clasificacion.Clasificacion;
-import com.deportiva.cuentas.Cuentas;
-import com.deportiva.cuerpo.Cuerpo;
-
-import com.deportiva.directiva.Directiva;
-import com.deportiva.enlaces.Enlaces;
-import com.deportiva.entradas.Entradas;
-import com.deportiva.estadio.Estadio;
-import com.deportiva.galeria.Galeria;
-import com.deportiva.himno.Canciones;
-import com.deportiva.historia.Historia;
-import com.deportiva.marcadores.Marcador;
-import com.deportiva.plantilla.MenuPlantilla;
-
 import com.example.deportiva.main.R;
+
+import com.example.deportiva.main.R.id;
+import com.example.deportiva.main.R.layout;
+
+
+
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 //import android.view.Menu;
@@ -33,7 +25,11 @@ public class Menu extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_menu);
-		setTitle("Menu-S.D.Ponferradina");
+
+		
+		setTitleColor(Color.WHITE);
+		
+		setTitle("S.D.Ponferradina");
 		
 		
 		 Adaptador adaptador = new Adaptador(this);
@@ -48,68 +44,47 @@ public class Menu extends ActionBarActivity {
 					long id) {
 				
 				Intent inten;
-				switch(position){
+	/**			switch(position){
 				
 				case 0:
-					inten = new Intent(Menu.this,Marcador.class);
+					 inten = new Intent(Menu.this,Status.class);
 					startActivity(inten);
 					break;
 				case 1:
-					inten = new Intent(Menu.this,Clasificacion.class);
+					inten = new Intent(Menu.this,ProcessMain.class);
 					startActivity(inten);
 					break;
-				case 2:
-					inten = new Intent(Menu.this,MenuPlantilla.class);
-					startActivity(inten);
-					break;	
+				case 2:inten = new Intent(Menu.this,Cronometro.class);
+				startActivity(inten);
+					
+					break;
+				
+					
 				case 3:
-					 inten = new Intent(Menu.this, Cuerpo.class);
+					 inten = new Intent(Menu.this,Converter.class);
 					startActivity(inten);
+
 					break;
 				case 4:
-					inten = new Intent(Menu.this,Directiva.class);
+					inten = new Intent(Menu.this,Decibelimetro.class);
 					startActivity(inten);
 					break;
 				case 5:
-					inten = new Intent(Menu.this,Galeria.class);
+					inten = new Intent(Menu.this,Calculator.class);
 					startActivity(inten);
 					break;
 				case 6:
-					inten = new Intent(Menu.this,IntroCalendario.class);
+					inten = new Intent(Menu.this,LinternaFlash.class);
 					startActivity(inten);
-					break;
+					break;*
 				case 7:
-					inten = new Intent(Menu.this,Entradas.class);
-					startActivity(inten);
-					break;
-				case 8:
-					inten = new Intent(Menu.this,Cuentas.class);
-					startActivity(inten);
-					break;
-				case 9:
-					inten = new Intent(Menu.this,Enlaces.class);
-					startActivity(inten);
-					break;
-				case 10:
-					inten = new Intent(Menu.this,Canciones.class);
-					startActivity(inten);
-					break;
-				case 11:
-					inten = new Intent(Menu.this,Historia.class);
-					startActivity(inten);
-					break;
-				case 12:
-					inten = new Intent(Menu.this,Estadio.class);
-					startActivity(inten);
-					break;
-				case 13:
 					finish();
 					break;
 				default:
 						
 					break;
 				
-				}
+				}**/
 				
 			}
  

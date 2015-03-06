@@ -20,12 +20,10 @@ public class Adaptador extends ArrayAdapter<Object> {
 		new ArrayDatos("Galeria de Imágenes","Algunas imágenes para el recuerdo",R.drawable.galeria),
 		new ArrayDatos("Calendario", "Calendario de la Liga Adelante", R.drawable.calendario),
 		new ArrayDatos("Entradas", "Precios de los abonos", R.drawable.entrada),
-		new ArrayDatos("Cuentas", "Las cuentas del club", R.drawable.cuentas),
 		new ArrayDatos("Enlaces", "Enlaces de interés", R.drawable.enlace),
 		new ArrayDatos("Himno", "Canciones de la Deportiva", R.drawable.himno),
 		new ArrayDatos("Historia", "Breve historia de nuestro club", R.drawable.historia),
-		new ArrayDatos("Estadio", "Breve reseña del Toralín", R.drawable.estadio),
-		new ArrayDatos("Salir", "Cerrar la aplicación", R.drawable.exit)
+		new ArrayDatos("Estadio", "Breve reseña del Toralín", R.drawable.estadio)
 	};
 	
 	
